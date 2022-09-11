@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Frontend Mentor | Product preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body class="bg-cprimary-cream h-full">
+    <section class="flex justify-center items-center h-full mx-4">
+        <div class="border rounded-md shadow-sm bg-white mx-auto container relative md:max-w-2xl xl:max-w-xl md:h-2/5">
+            <img src="./images/image-product-mobile.jpg" class="w-full h-full object-cover rounded-t-md
+                     md:rounded-none md:rounded-l-md md:absolute md:w-1/2 md:hidden" alt="Gabrielle Essence Eau De Parfum">
+            <img src="./images/image-product-desktop.jpg" class="hidden object-cover md:rounded-none md:rounded-l-md md:absolute md:block md:w-1/2 h-full " alt="Gabrielle Essence Eau De Parfum">
+            <div class="p-4 md:ml-auto md:w-1/2">
+                <h4 class="uppercase tracking-widest text-sm mb-4">Preview</h4>
+                <h1 class="text-cneutral-vdb font-secondary font-bold text-4xl tracking-tight leading-8 mb-4">Gabrielle Essence Eau De Parfum </h1>
+                <p class="mb-6">A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+                <div class="flex items-center space-x-4 mb-4">
+                    <span class="text-cprimary-darkCyan font-secondary text-3xl font-medium">$149.99</span>
+                    <span class="line-through text-sm">$169.99</span>
+                </div>
+                <button class="bg-cprimary-darkCyan flex w-full items-center
+                    rounded-md 
+                    justify-center space-x-2 px-2 py-4 hover:bg-blend-normal  text-white">
+                <img src="./images/icon-cart.svg" class="w-4" alt="">
+                <span class="text-sm">Add to Cart</span>
+            </button>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
